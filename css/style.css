@@ -1,0 +1,422 @@
+*{
+    font-family: 'Bree Serif', serif;
+}
+
+/*Selector Header*/
+.site-header.inicio{
+    background: url(../images/Fondo.jpg);
+    height: 100vh;
+    width: 100vw;
+    min-height: 600px;
+    min-width: 1000px;
+    background-position: center center;
+    background-size: cover; /*Genera espacion ancho y alto guardando proporciones*/
+}
+.site-header{
+    background-color: #1A1716/*#0a4e05*/;
+    padding: 1rem 0 2rem 0;
+}
+.logo{
+    height: 100px;
+    width: 140px;
+}
+.logo-exterminio{
+    height: 125px;
+    width: 190px    ;
+}
+.mayuscula{
+    text-transform: uppercase;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+html{
+    box-sizing:border-box;
+    font-size: 62.5%;
+}
+body{
+    font-size: 2rem;
+    line-height: 2;
+    margin: 0;
+}
+
+/** Start Selectores Globales **/
+img{
+    max-width: 100%;
+}
+.contenedor{
+    max-width: 150rem;
+    margin: 0 5rem;
+}
+/*End Selectores globales*/
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 4.5rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+/**Star Utilidades**/
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.fw-300{
+    font-weight:300;
+}
+.centrar-texto{
+    text-align: center;
+}
+/**End Utilidades**/
+.encabezado{
+    font-size: 1rem;
+}
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.contenido-header h1{
+    color:#ffffff;
+    padding-bottom:1rem;
+    max-width: 60rem;
+    line-height: 2; 
+    font-size: 6rem;
+}
+.barra{
+    display: flex;  /*afecta el primer elemento del div o clase*/
+    justify-content: space-between;
+    padding-top: 1rem;
+    align-items: flex-start;
+
+}
+.navegacion a{
+    color:white;
+    text-decoration: none;
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+.navegacion a:last-of-type{ /*Psedo selector, se ubica en el ultimo elemento de la etiqueta <a>*/
+    margin:0;
+}
+.navegacion a:hover{
+    color: #04B45F;
+}
+/**Iconos Nosotros**/
+.encabezado-nosotros{
+    font-weight: 200;
+    justify-content: space-between;
+}
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+.icono{
+    font-size: cover;
+    flex-basis: calc(33.3% - 1rem);
+    text-align:center;
+    padding-right: 2rem;
+}
+.icono img{
+    width:20rem;
+    height: 20rem   ;
+}
+.contenedor-anuncio{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+    flex-wrap: wrap;
+}
+.anuncio{
+    flex: 0 0 calc(33.3% - 1rem);
+    /*flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis:calc(33.3% - 1rem);*/
+    border: 1px solid #B5B5B5;
+    background-color: #F5F5F5;
+    margin-bottom: 2rem;
+}
+.anuncio img{
+    width: 100%;
+    height: 40rem;
+    /**33.2rem
+    28.4rem**/
+}
+.contenido-anuncio{
+    padding:2rem;
+}
+.contenido-anuncio h3, 
+.contenido-anuncio p{
+    margin:0;
+
+}
+.precio{
+color:#df5f25;   
+font-weight: 700; 
+}
+.d-block{
+    display: block!important;
+}
+/** Botones **/
+.boton{
+    color:#FFFFFF;
+    font-weight: 400;
+    text-decoration:none;
+    font-size: 1.9rem;
+    padding:1rem 3rem;
+    margin-top: 3rem;
+    display:inline-block;
+    text-align: center;
+}
+.boton-verde{
+    background-color: #19d66e;
+}
+.boton-rojo{
+    background-color: #DB654E;
+}
+.ver-catalogo{
+    display:flex;
+    justify-content: flex-end;
+
+}
+.iconos-exterminios{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconos-exterminios li{
+    /**flex: 1;**/
+    display: flex;
+}
+.iconos-exterminios li img{
+    margin-right: 2rem;
+    
+}
+.iconos-exterminios img{
+    width: 4rem;
+    height: 5rem;
+}
+.ver-catalogo a{
+    margin: 0;
+}
+.imagen-contacto{
+    background-image: url(../images/contacto1.jpg);
+    height: 40rem;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.contenido-contacto{
+    flex: 1;
+    color: rgb(0, 0, 0);
+}
+.contenido-contacto p{
+    font-size: 3rem;
+}
+/**Seccion Inferior**/
+.seccion-inferior{
+    display: flex;
+    justify-content: space-between;
+}
+.seccion-inferior .blog{
+    flex-basis: 60%;
+}
+.seccion-inferior .comentarios{
+    flex-basis: calc(40%-2rem);
+    padding-left: 4rem;
+}
+.entrada-blog{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.entrada-blog .imagen{
+    margin-bottom: 2rem;
+    flex-basis: 70%;
+    margin-right: 2.5rem;
+    
+}
+.entrada-blog img{
+    border-radius: 1rem;
+    min-height: 14rem;
+}
+/*.entrada-blog:last-of-type{
+    margin-bottom: 0
+}*/
+
+.entrada-blog .texto-entrada{
+    flex-basis:  calc(60% -3rem);
+}
+.texto-entrada h4{
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    line-height: 1;
+}
+.texto-entrada p{
+    margin: 0;
+    line-height: 2;
+    font-size: 1.44rem;
+}
+.seccion-inferior .comentarios{
+    flex-basis: calc(100%-2rem);
+}
+.texto-entrada h4{
+    color: #04B45F;
+    text-decoration: none;
+    display: inline-block;
+}
+.texto-entrada h4::after{
+    
+}
+.span{
+    color: #EE0E0E;
+}
+.texto-entrada h4::after{
+    margin-top: 1rem;
+    content: '';
+    display: block;
+    width: 20rem;
+    height: 0.5rem;
+    background-color: #0a4e05;
+} 
+/**Comentario**/
+.comentario{
+    background-color: #04B45f;
+    font-size: 2rem;
+    padding: 0.2rem;
+    color: #FFFFFF;
+    border-radius: 2rem;
+    margin-right: 2rem;
+   /* margin-left: 8rem;
+    margin-right: 8rem;*/
+}
+
+.comentario p{
+    text-align: right;
+}
+.comentario blockquote::before{
+    
+}
+
+.comentario p{
+    
+    padding-right: 5rem;
+}
+/*Footer*/
+.site-footer{
+    background-color: #1A1716/*#0a4e05*/;
+    padding: 1rem;
+    margin-bottom: 0rem;
+    color: #FFFFFF;
+}
+.copyright{
+  
+    font-size: 2rem;
+   margin-right: 1rem;
+    
+}
+
+.navegacion a{
+    color:white;
+    text-decoration: none;
+    font-size: 2.8rem;
+    margin-right: 2rem;
+    
+}
+.navegacion a:last-of-type{ /*Psedo selector, se ubica en el ultimo elemento de la etiqueta <a>*/
+    margin:0;
+}
+.navegacion a:hover{
+    color: #04B45F;
+}
+
+/*Paginas Internaas*/
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+
+}
+.texto-nosotros blockquote{
+    font-weight: 900;
+    margin: 1rem,0;
+
+}
+.texto-nosotros p{
+    font-size: 1.8rem;
+    text-align: justify;
+}
+.contenido-nosotros .imagen{
+   
+}
+/*Anuncios*/
+.title{
+    font-size: 5rem;
+}
+.imagen-producto img{
+    display: block;
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.servicios{
+     text-align: center;
+}
+.icono-exterminio{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 50rem;
+   
+}
+.icono-exterminio li{
+    /**flex: 1;**/
+    display: flex;
+}
+
+.icono-exterminio img{
+    width: 4rem;
+    height: 5rem;
+} 
+ /**Blog**/
+.size img{
+    margin-left: 18rem;
+    border-radius: 1rem;
+}
+.righ{
+    margin-right: 18rem;
+}
+.centro{
+    text-align: center;
+    margin-left: 17rem;
+    margin-right: 17rem;
+}
+/*Contacto*/
+.contenido-centrado form{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: justify;
+    max-width: 50rem;
+}
+label{
+    display: block;
+}
+
+.imgservicios{
+    display: block;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
