@@ -1,2 +1,3 @@
 # Proyecto_Formativo
-Este es el proyecto formativo del SENA el cual tuvimos que crear una pagina 
+
+Diseño de Pagina Web para una empresa comercializadora de Exterminios, como proyecto formativo para el SENA.
